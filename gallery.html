@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Senior Citizen Meal Delivery">
+<meta name="keywords" content="senior, meal, breakfast, specialty diets, gallery">
+<link rel="stylesheet" href="seniorserver.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SENIOR SERVER GALLERY</title>
+<link rel="icon" 
+      type="image/x-icon" 
+      href="Fav.ico">
+<style>
+body {color:#eaaf92;
+	  }
+	  
+#gallery {position:relative;}
+#gallery ul {width: 300px;
+             list-style-type:none;}
+#gallery li { display: inline;
+              float: left;
+			  padding: 10px;}
+#gallery span { position: absolute;
+                left: -1000px;
+				opacity: 0;
+				transition:opacity 1s ease-in-out;}
+#gallery a:hover span {position: absolute;
+                       top: 16px;
+					   left: 320px;
+					   text-align: center;
+					   opacity: 1; }
+.footernav {
+	   background-color: #cacb95;	   
+	   letter-spacing: 0.1em;
+	   font-weight: bold;
+	   text-align: center; 
+	   color:#858741;
+       width: 80%;
+	   position: relative;
+	   left: 155px;
+	   top: 600px;
+	   bottom: 0px;}
+.footercopy {	   
+	   font-weight: bold;
+	   text-align: center; 
+	   color:#858741;
+       position: relative;
+       left:0px;
+	   top: 15px;
+	  }
+
+@media only screen and (max-width: 1024px)
+{ 
+#gallery {position:relative;}
+#gallery ul {width: 280px;
+             list-style-type:none;}
+#gallery li { display: inline;
+              float: left;
+			  padding: 10px;}
+#gallery span { position: absolute;
+                left: -1000px;
+				opacity: 0;
+				transition:opacity 1s ease-in-out;}
+#gallery a:hover span {position: absolute;
+                       top: 13px;
+					   left: 300px;
+					   text-align: center;
+					   opacity: 1; }
+#gallery span img {width:350px;
+				height:250px;}
+
+.footernav {
+	   background-color: #cacb95;	   
+	   letter-spacing: 0.1em;
+	   font-weight: bold;
+	   text-align: center; 
+	   color:#858741;
+       width: 80%;
+	   position: relative;
+	   top: 500px;
+	   left: 80px;
+	   bottom: 0px;}
+.footercopy {	   
+	   font-weight: bold;
+	   text-align: center; 
+	   color:#858741;
+       position:relative;
+       left: 10px;
+	  }
+}
+@media only screen and (max-width:768px)
+{ 
+#gallery {position:relative;}
+#gallery ul {width: 250px;
+             list-style-type:none;}
+#gallery li { display: inline;
+              float: left;
+			  padding: 10px;}
+#gallery span { position: absolute;
+                left: -1000px;
+				opacity: 0;
+				transition:opacity 1s ease-in-out;}
+#gallery a:hover span {position: absolute;
+                       top: 10px;
+					   left: 280px;
+					   text-align: center;
+					   opacity: 1; 
+					   }
+#gallery span img {width:300px;
+				height:200px;}	
+				
+.footernav {
+	   background-color: #cacb95;	   
+	   letter-spacing: 0.1em;
+	   font-weight: bold;
+	   text-align: center; 
+	   color:#858741;
+       width: 80%;
+	   position: relative;
+	   top: 400px;
+	   left: 50px;
+	   bottom: 0px;}
+.footercopy {	   
+	   font-weight: bold;
+	   text-align: center; 
+	   color:#858741;
+        position: relative;
+       left: 10px;
+	  }
+	  }
+</style>
+</head>
+<body>
+<header>
+<div class="container">
+<img src="bannerhome.png" alt="" style="width:100%">
+ <div class="centered">Senior Server Meal Delivery</div>
+</div>
+ 
+<div class="logo">
+		<a href="index.html"><img src="logo.png" class="logo" alt="logo"></a>
+</div>
+<div>
+<nav>
+    <ul>
+	 <li><a href="index.html">Home</a></li>
+	 <li><a href="javascript:void(0)">Meals</a>
+	     <ul>
+	       <li><a href="breakfastpage.html">Breakfast</a></li>
+	       <li><a href="lunch&dinner.html">Lunch/Dinner</a></li>
+	     </ul>
+	 </li>
+	 <li><a href="SpecialtyDiets.html">Specialty Diets</a></li>
+     <li><a href="gallery.html">Gallery</a></li>
+     <li><a href="contact.html">Contact</a></li>
+	</ul> 
+</nav>
+</div>
+</header>
+<h1> Image Gallery </h1>
+<div id="gallery">
+<ul >
+	<li>
+	<a href="galleryphoto1.jpg">
+        <img src="galleryphoto1_tn.jpg" width="100" height="75" alt="Chicken Rice and Veg Stew">
+	<span>
+	    <img src="galleryphoto1.jpg" width="400" height="300" alt="Chicken Rice and Veg Stew">
+	<br>Chicken Rice and Veg Stew
+	</span>
+	</a>
+    </li>
+	<li>
+	<a href="galleryphoto2.jpg">
+        <img src="galleryphoto2_tn.jpg" width="100" height="75" alt="Beef And Broccoli">
+	<span>
+	    <img src="galleryphoto2.jpg" width="400" height="300" alt="Beef And Broccoli">
+	<br>Beef And Broccoli
+	</span>
+	</a>
+    </li>
+	<li>
+	<a href="galleryphoto3.jpg">
+        <img src="galleryphoto3_tn.jpg" width="100" height="75" alt="Greek Omelet with Fruited Quinoa">
+	<span>
+	    <img src="galleryphoto3.jpg" width="400" height="300" alt="Greek Omelet with Fruited Quinoa">
+	<br>Greek Omelet with Fruited Quinoa
+	</span>
+	</a>
+    </li>
+	<li>
+	<a href="galleryphoto4.jpg">
+        <img src="galleryphoto4_tn.jpg" width="100" height="75" alt="Cheese Tortellini with Three Cheese Tomato Sauce">
+	<span>
+	    <img src="galleryphoto4.jpg" width="400" height="300" alt="Cheese Tortellini with Three Cheese Tomato Sauce">
+	<br>Cheese Tortellini with Three Cheese Tomato Sauce
+	</span>
+	</a>
+    </li>
+	<li>
+	<a href="galleryphoto5.jpg">
+        <img src="galleryphoto5_tn.jpg" width="100" height="75" alt="Berry Blast Protein Shake">
+	<span>
+	    <img src="galleryphoto5.jpg" width="400" height="300" alt="Berry Blast Protein Shake">
+	<br>Berry Blast Protein Shake
+	</span>
+	</a>
+    </li>
+	   <li>
+	<a href="galleryphoto6.jpg">
+        <img src="galleryphoto6_tn.jpg" width="100" height="75" alt="Salted Caramel Pecan Bar">
+	<span>
+	    <img src="galleryphoto6.jpg" width="400" height="300" alt="Salted Caramel Pecan Bar">
+	<br>Salted Caramel Pecan Bar
+	</span>
+	</a>
+    </li>
+</ul>
+</div>
+<footer>
+<nav class="footernav">
+    <ul>
+	 <li><a href="index.html">Home</a></li>
+	 <li><a href="breakfastpage.html">Breakfast</a></li>
+	 <li><a href="lunch&dinner.html">Lunch/Dinner</a></li> 
+	 <li><a href="SpecialtyDiets.html">Specialty Diets</a></li>
+     <li><a href="gallery.html">Gallery</a></li>
+     <li><a href="contact.html">Contact</a></li>
+	</ul> 
+	<div class="footercopy">Copyright &copy; Senior Server 2018</div>
+</nav>
+</footer>
+</body>
+</html>

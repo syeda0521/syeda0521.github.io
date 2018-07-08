@@ -1,0 +1,234 @@
+/* Container holding the image and the text */
+.con {
+    position: relative;
+    text-align: center;
+    color:  #FFFFCC;
+}
+
+.con2 img{
+	opacity:0.5;
+}
+
+/* Centered text */
+.topimg {position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);}
+		
+div h1 {font-size:60px;
+		font-family:Courier New;}
+div p {font-size:20px;
+		font-family:Book Antiqua;}
+
+h2 {text-align:center;
+	font-family:Georgia;
+	font-size: 60px;
+	color:#DF7D60;}
+h3{ text-align:center;
+	font-family:Georgia;
+	font-size: 60px;
+	color:#E39871;}
+	
+hr{
+  border-top: 3px solid #D3A46E;
+}
+
+
+h4 {font-size:30px;
+	text-align:center;
+	border: 10px solid transparent;
+    padding: 10px;
+    border-image-source: url(border.png);    
+    border-image-slice: 30;
+	display: inline;
+	}
+	
+h5 {font-size:30px;
+	text-align:center;
+	border: 10px solid transparent;
+	padding: 10px;
+    border-image-source: url(border.png);    
+    border-image-slice: 30;
+	display: inline;
+	
+	}
+	
+/*Image details*/
+/* Style the Image Used to Trigger the Modal */
+.myImg { border-radius:20px;
+    cursor: pointer;
+    transition: 0.5s;
+	
+}
+
+.myImg:hover {opacity: 0.5;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+	font-size:40px;
+	font-family:Comic Sans MS, cursive, sans-serif;}
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 768px){
+    .modal-content {
+        width: 100%;
+    }
+	.close {
+    position: absolute;
+    top: 15px;
+    left: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+}
+
+div.desc {font-size:20px;
+    padding: 15px;
+	position:absolute;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row {
+    display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    padding: 5px;
+}
+
+main { margin:auto;
+		padding: 30px 10px 30px 30px;}
+		
+/*responsive page*/
+@media screen and (max-width: 1024px) {
+  .con {
+    display: none;
+  }
+h4 {font-size:20px;
+	display:block;}
+h5 {font-size:20px;
+	display:block;}
+  
+h2 {font-size:2.5em;}
+h3 {font-size:2.5em;}
+
+main{ display:block;
+width:100%;}
+main img{display:block;
+		width:200px;
+		height:100px;
+}
+div{display:block;}
+span{display:none;}
+.desc{display:none;}
+
+
+body {background:linear-gradient( to bottom right, #f7f4e5, #efe99c, #efe979 );
+margin: 0;}
+  .con {
+    display: none;
+  }
+h4 {font-size:18px;
+	display:block;}
+h5 {font-size:18px;
+	display:block;}
+  
+h2 {font-size:2em;}
+h3 {font-size:2em;}
+
+main{ display:block;
+width:100%;}
+main img{display:block;
+		width:200px;
+		height:100px;
+}
+div{display:block;}
+span{display:none;}
+.desc{display:none;}

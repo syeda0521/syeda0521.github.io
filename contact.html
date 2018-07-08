@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Senior Citizen Meal Delivery">
+<meta name="keywords" content="senior, meal, breakfast, specialty diets, gallery">
+<link rel="stylesheet" href="seniorserver.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+.copyrightcontact {	   
+	   font-weight: bold;
+	   text-align: center; 
+	   color:#858741;
+       position: relative;
+       left: 15px;
+	   top: 20px;
+	  } 
+.submitreset {margin-left: 100px;
+              margin-bottom:1px;}
+.submitreset1 {margin-left: 150px;
+               margin-top:0px;}
+
+@media only screen and (max-width: 1024px)
+.copyrightcontact {	   
+	   font-weight: bold;
+	   text-align: center; 
+	   color:#858741;
+       position: relative;
+       left: 15px;
+	   top: 20px;
+	  } 
+.submitreset {margin-left: 150px;}
+
+fieldset {width: 50%;
+          margin-left: 100px;}
+
+@media only screen and (max-width: 768px)
+.copyrightcontact {	   
+	   font-weight: bold;
+	   text-align: center; 
+	   color:#858741;
+       position: relative;
+       left: 15px;
+	   top: 20px;
+	  } 
+.submitreset {margin-left: 150px;}
+label {text-align:center; 
+       margin-left: 50px; 
+	   margin-top: 20px;}
+
+</style>
+
+<title>SENIOR DELIVERY CONTACT</title>
+
+<link rel="icon" 
+      type="image/x-icon" 
+      href="Fav.ico">
+</head>
+<body>
+<header>
+<div class="container" >
+<img src="bannerhome.png" alt="" style="width:100%">
+ <div class="centered">Senior Server Meal Delivery</div>
+</div>
+ 
+<div class="logo">
+		<a href="index.html"><img src="logo.png" class="logo" alt="logo"></a>
+</div>
+<div>
+<nav>
+    <ul>
+	 <li><a href="index.html">Home</a></li>
+	 <li><a href="javascript:void(0)">Meals</a>
+	     <ul>
+	       <li><a href="breakfastpage.html">Breakfast</a></li>
+	       <li><a href="lunch&dinner.html">Lunch/Dinner</a></li>
+	     </ul>
+	 </li>
+	 <li><a href="SpecialtyDiets.html">Specialty Diets</a></li>
+     <li><a href="gallery.html">Gallery</a></li>
+     <li><a href="contact.html">Contact</a></li>
+	</ul> 
+</nav>
+</div>
+</header><br><br>
+
+<script>
+$('input[type="range"]').on("change mousemove", function () {
+    var val = ($(this).val() - $(this).attr('min')) / ($(this).attr('max') - $(this).attr('min'));
+
+    $(this).css('background-image',
+                '-webkit-gradient(linear, left top, right top, '
+                + 'color-stop(' + val + ', #2f466b), '
+                + 'color-stop(' + val + ', #d3d3db)'
+                + ')'
+                );
+});</script>
+
+<form method="post" action="http://webdevbasics.net/scripts/demo.php " autocomplete="off">
+<fieldset><legend><h1>How can we help you?</h1></legend>
+<label>*First Name:</label>
+<input type="text" name="firstName" id="firstName" size="50" placeholder="Enter Your First Name" required autofocus>
+<br>
+<br>
+<label>*Last Name:</label>
+<input type="text" name="lastName" id="lastName" size="50"   placeholder="Enter Your Last Name" required>
+<br>
+<br>
+<label>Address:</label>
+<input type="text" name="address" id="address" size="50" placeholder="Enter Your Address">
+<br>
+<br>
+<label>City:</label>
+<input type="text" name="city" id="city" size="50"  placeholder="Enter Your City">
+<br>
+<br>
+<label>State:</label>
+<input type="text" name="state" id="state" size="50" placeholder="Enter Your State">
+<br>
+<br>
+<label>Postal Code:</label>
+<input type="text" name="postal" id="postal" size="50"  pattern="[A-Za-z]{3}" placeholder="Enter Your Postal Code">
+<br>
+<br>
+<label>Phone Number:</label>
+<input type="text" name="phone" id="phone" size="50"  placeholder="Enter Your Phone Number">
+<br>
+<br>
+<label>*Email Address:</label>
+<input type="email" name="email" id="email" size="50"  placeholder="Enter Your Email Address" required>
+<br>
+<br>
+<label>Question:</label><br>
+<textarea cols= "65" rows="10" placeholder="Enter Your Question"></textarea><br><br>
+<label style="text-align:center; margin-left: 50px; margin-top: 20px;">How much did you like our website?</label>
+<input style="margin-left:20px; background: red; margin-top:30px;" type="range" name="number" min="0" max="10"><br><br><br>
+<label style="text-align:center; margin-left: 50px; margin-top: 20px;">Will you use our service?</label><br>
+<label>Yes</label>
+<input style="margin-left: 30px; margin-top:20px;" type="radio" name="yesno" value="Yes" checked>
+<label>No</label>
+<input style="margin-left: 30px; margin-top:20px;" type="radio" name="yesno" value="No">
+<br><br><br>
+<input class="submitreset" type="submit"><br>
+<input class="submitreset1" type="reset">
+</fieldset>
+<br>
+<br>
+</form>
+<br><br>
+<footer>
+<nav class="navbar">
+<ul>
+	 <li><a href="index.html">Home</a></li>
+	 <li><a href="breakfastpage.html">Breakfast</a></li>
+	 <li><a href="lunch&dinner.html">Lunch/Dinner</a></li> 
+	 <li><a href="SpecialtyDiets.html">Specialty Diets</a></li>
+     <li><a href="gallery.html">Gallery</a></li>
+     <li><a href="contact.html">Contact</a></li>
+	</ul> 
+<div class="copyrightcontact">Copyright &copy; Senior Server 2018</div>
+</nav>
+</footer>
+</body>
+</html>

@@ -1,0 +1,531 @@
+body {background:linear-gradient( to bottom right, #f7f4e5, #efe99c, #efe979 );
+      background-attachment: fixed;
+		margin: 0;
+		padding: 0;
+		width: 100%;}
+		
+/*** Header ***/
+
+.container {
+    position: relative;
+text-align: center; }
+
+.centered {
+    position: absolute;
+    top: 80px;
+    left: 580px;
+	color: 	#eaaf92;
+font-size: 24pt;
+font-family: Lucida Handwriting; }
+
+		 
+.logo {position: absolute;
+       top: 10px;
+	   left: 10px;
+	   right: 20px;
+	   bottom: 20px;
+	   width: 145px;
+	   height: 145px;
+	   display: block;
+	   border-radius: 50%;}	
+	   
+/*** Navigation ***/
+nav {  float: none;
+		width: auto;
+       background-color: #cacb95; 
+	   letter-spacing: 0.1em;
+	   font-weight: bold;
+	   text-align: right; 
+	   padding-right: 2em;
+	   position: absolute;
+	   top: 5px;
+	   left:990px;
+       color:#858741;	   
+	}
+	
+nav ul { list-style-type: none; 
+        margin: 0;
+		display:inline;
+}
+		  
+nav ul ul { position: absolute; 
+        background-color: #cacb95; 
+		padding: 0; 
+		text-align: left; 
+		display: none; }
+
+nav ul ul li { border: 1px solid #00005D; 
+              display: block; 
+		      width: 8em; 
+		      padding-left: 1em; 
+		      margin-left: 0; }
+nav li:hover ul { display: block;
+                  color: white;
+			background-color: #577e26}
+
+nav li { padding: 0.5em;
+      display: inline-block;
+}
+nav a { color: #858741;
+       text-decoration: none; 
+       display: block;
+}
+nav a:hover {  color: white;
+			background-color: #577e26;}
+/*********/
+
+/*** About Us ***/
+.about { background-color: #858741;
+               opacity: 0.7;
+			   
+			   max-width: 100%;
+			   height: 250px;
+			   position: relative;
+	           padding-top: 10px;
+	           padding-bottom: 100px;
+			   padding-left: 30px;
+               padding-right: 20px;
+	           border-radius: 100px 100px 100px 100px;	
+	          }  
+
+.about-title{
+	color: #eaaf92;
+	text-align: center;
+	font-size: 50px;
+	font-family: "Freestyle Script", serif;
+	text-decoration: underline overline;
+	max-width: 100%;
+	height: auto;
+	}
+
+.about-content { color: #f7f4e5;
+	text-align: center;
+	margin: auto;
+	width: 30em;
+	
+	max-width: 100%;
+	font-size: 25px;
+	font-family: "Bookman Old Style", serif;
+	height: auto;}	
+/***********************/
+
+/**** Our Features ****/
+.ourfeatures { background-color: #858741;
+			   
+			   max-width: 100%;
+			   height: 300px;
+			   position: relative;
+	           padding-top: 10px;
+	           padding-bottom: 100px;
+			   padding-left: 30px;
+               padding-right: 20px;
+	           border-radius: 30%;	
+	           padding-left: 30px;
+               padding-right: 20px;}
+			
+.ourfeatures-title{
+	color: #eaaf92;
+	text-align: center;
+	font-size: 50px;
+	font-family: "Freestyle Script", serif;
+	text-decoration: underline overline;
+	max-width: 100%;
+    height: auto;}
+
+#healthy {position: relative;
+          top: 0px;
+          left:257px;
+		  }
+.zoom {
+    transition: transform .2s; /* Animation */
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.5);
+}
+		  
+#specialty {position: relative;
+          top: 0px;
+          left:407px;}
+
+#weightloss {position: relative;
+          top: 0px;
+          left:557px;}		  
+
+/*************************/
+
+/**** Footer ****/
+.navbar {
+	   background-color: #cacb95;	   
+	   letter-spacing: 0.1em;
+	   font-weight: bold;
+	   text-align: center; 
+	   color:#858741;
+       width: 80%;
+	   position: relative;
+	   left: 150px;
+	   top: 100px;
+	   bottom: 0px;}
+.copyright {	   
+	   font-weight: bold;
+	   text-align: center; 
+	   color:#858741;
+position: relative;
+       left: 15px;
+	   top: 100px;
+	  }
+	  
+	  
+/***/
+
+/*** Responsive Designs ***/
+@media only screen and (max-width: 1024px)
+{ 
+body {background:linear-gradient( to bottom right, #f7f4e5, #efe99c, #efe979 );
+margin: 0;}
+
+.container {
+    position: relative;
+text-align: center; }
+
+.centered {
+    position: absolute;
+    top: 60px;
+    left: 300px;
+	color: 	#eaaf92;
+font-size: 24pt;
+font-family: Lucida Handwriting; }
+
+		 
+.logo {position: absolute;
+       top: 10px;
+	   left: 10px;
+	   right: 20px;
+	   bottom: 20px;
+	   width: 90px;
+	   height: 90px;
+	   display: block;
+	   border-radius: 50%;}	
+	   
+/*** Navigation ***/
+nav {  background-color: #cacb95; 
+	   letter-spacing: 0.1em;
+	   font-weight: bold;
+	   text-align: right; 
+	   padding-right: 2em;
+	   position: absolute;
+	   top: 5px;
+	   left:400px;
+       color:#858741;	   
+	}
+	
+nav ul { list-style-type: none; 
+        margin: 0;
+}
+		  
+nav ul ul { position: absolute; 
+        background-color: #cacb95; 
+		padding: 0; 
+		text-align: left; 
+		display: none; }
+
+nav ul ul li { border: 1px solid #00005D; 
+              display: block; 
+		      width: 8em; 
+		      padding-left: 1em; 
+		      margin-left: 0; }
+nav li:hover ul { display: block;
+                  color: white;
+			background-color: #577e26}
+
+nav li { padding: 0.5em;
+      display: inline-block;
+}
+nav a { color: #858741;
+       text-decoration: none; 
+       display: block;
+}
+nav a:hover {  color: white;
+			background-color: #577e26;}
+/*********/
+
+/*** About Us ***/
+.about { background-color: #858741;
+               opacity: 0.7;
+			   
+			   max-width: 100%;
+			   height: 200px;
+			   position: relative;
+	           padding-top: 10px;
+	           padding-bottom: 100px;
+			   padding-left: 30px;
+               padding-right: 20px;
+	           border-radius: 75px 75px 75px 75px;	
+	          }  
+
+.about-title{
+	color: #eaaf92;
+	text-align: center;
+	font-size: 30px;
+	font-family: "Freestyle Script", serif;
+	text-decoration: underline overline;
+	max-width: 100%;
+	height: auto;
+	}
+
+.about-content { color: #f7f4e5;
+	text-align: center;
+	margin: auto;
+	width: 20em;
+	max-width: 100%;
+	font-size: 20px;
+	font-family: "Bookman Old Style", serif;
+	height: auto;}	
+/***********************/
+
+/**** Our Features ****/
+.ourfeatures { background-color: #858741;
+			   
+			   max-width: 100%;
+			   height: 200px;
+			   position: relative;
+	           padding-top: 10px;
+	           padding-bottom: 100px;
+			   padding-left: 30px;
+               padding-right: 20px;
+	           border-radius: 30%;	
+	           padding-left: 30px;
+               padding-right: 20px;}
+			
+.ourfeatures-title{
+	color: #eaaf92;
+	text-align: center;
+	font-size: 30px;
+	font-family: "Freestyle Script", serif;
+	text-decoration: underline overline;
+	max-width: 100%;
+    height: auto;}
+
+#healthy {position: relative;
+          top: 0px;
+          left:240px;
+		  }
+.zoom {
+    transition: transform .2s; /* Animation */
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.5);
+}
+		  
+#specialty {position: relative;
+          top: 0px;
+          left:320px;}
+
+#weightloss {position: relative;
+          top: 0px;
+          left:400px;}		  
+
+/*************************/
+
+/**** Footer ****/
+.navbar {
+	   background-color: #cacb95;	   
+	   letter-spacing: 0.1em;
+	   font-weight: bold;
+	   text-align: center; 
+	   color:#858741;
+       width: 80%;
+	   position: relative;
+	   left: 80px;
+	   top: 80px;
+	   bottom: 0px;}
+.copyright {	   
+	   font-weight: bold;
+	   text-align: center; 
+	   color:#858741;
+       position: relative;
+       left: 15px;
+	   top: 100px;
+	  }
+}
+
+@media only screen and (max-width: 768px)
+{ 
+body {background:linear-gradient( to bottom right, #f7f4e5, #efe99c, #efe979 );
+margin: 0;}
+
+.container {
+    position: relative;
+text-align: center; }
+
+.centered {
+    position: absolute;
+    top: 40px;
+    left: 175px;
+	color: 	#eaaf92;
+font-size: 20pt;
+font-family: Lucida Handwriting; }
+
+		 
+.logo {position: absolute;
+       top: 10px;
+	   left: 10px;
+	   right: 20px;
+	   bottom: 20px;
+	   width: 50px;
+	   height: 50px;
+	   display: block;
+	   border-radius: 50%;}	
+	   
+/*** Navigation ***/
+nav {  background-color: #cacb95; 
+	   letter-spacing: 0.1em;
+	   font-weight: bold;
+	   text-align: right; 
+	   padding-right: 2em;
+	   position: absolute;
+	   top: 5px;
+	   left:70px;
+       color:#858741;	   
+	}
+	
+nav ul { list-style-type: none; 
+        margin: 0;
+}
+		  
+nav ul ul { position: absolute; 
+        background-color: #cacb95; 
+		padding: 0; 
+		text-align: left; 
+		display: none; }
+
+nav ul ul li { border: 1px solid #00005D; 
+              display: block; 
+		      width: 8em; 
+		      padding-left: 1em; 
+		      margin-left: 0; }
+nav li:hover ul { display: block;
+                  color: white;
+			background-color: #577e26}
+
+nav li { padding: 0.5em;
+      display: inline-block;
+}
+nav a { color: #858741;
+       text-decoration: none; 
+       display: block;
+}
+nav a:hover {  color: white;
+			background-color: #577e26;}
+/*********/
+
+/*** About Us ***/
+.about { background-color: #858741;
+               opacity: 0.7;
+			   
+			   max-width: 100%;
+			   height: 200px;
+			   position: relative;
+	           padding-top: 10px;
+	           padding-bottom: 100px;
+			   padding-left: 30px;
+               padding-right: 20px;
+	           border-radius: 50px 50px 50px 50px;	
+	          }  
+
+.about-title{
+	color: #eaaf92;
+	text-align: center;
+	font-size: 25px;
+	font-family: "Freestyle Script", serif;
+	text-decoration: underline overline;
+	max-width: 100%;
+	height: auto;
+	}
+
+.about-content { color: #f7f4e5;
+	text-align: center;
+	margin: auto;
+	width: 15em;
+	
+	max-width: 100%;
+	font-size: 15px;
+	font-family: "Bookman Old Style", serif;
+	height: auto;}	
+/***********************/
+
+/**** Our Features ****/
+.ourfeatures { background-color: #858741;
+			   
+			   max-width: 100%;
+			   height: 200px;
+			   position: relative;
+	           padding-top: 10px;
+	           padding-bottom: 100px;
+			   padding-left: 30px;
+               padding-right: 20px;
+	           border-radius: 30%;	
+	           padding-left: 30px;
+               padding-right: 20px;}
+			
+.ourfeatures-title{
+	color: #eaaf92;
+	text-align: center;
+	font-size: 25px;
+	font-family: "Freestyle Script", serif;
+	text-decoration: underline overline;
+	max-width: 100%;
+    height: auto;}
+
+#healthy {position: relative;
+          top: 0px;
+          left:100px;
+		  }
+.zoom {
+    transition: transform .2s; /* Animation */
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.5);
+}
+		  
+#specialty {position: relative;
+          top: 0px;
+          left:140px;}
+
+#weightloss {position: relative;
+          top: 0px;
+          left:180px;}		  
+
+/*************************/
+
+/**** Footer ****/
+.navbar {
+	   background-color: #cacb95;	   
+	   letter-spacing: 0.1em;
+	   font-weight: bold;
+	   text-align: center; 
+	   color:#858741;
+       width: 80%;
+	   position: relative;
+	   left: 50px;
+	   top: 50px;
+	   bottom: 0px;}
+.copyright {	   
+	   font-weight: bold;
+	   text-align: center; 
+	   color:#858741;
+        position: relative;
+       left: 10px;
+	   top: 100px;
+	  }

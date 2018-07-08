@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SENIOR SERVER MEAL DELIVERY</title>
+<meta charset="utf-8">
+<link rel="icon" 
+      type="image/x-icon" 
+      href="Fav.ico">
+<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> 
+<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<link rel="stylesheet" href="seniorserver.css">
+<style>
+body {background-color:#f4f7e5;
+      }
+main {color:#f4f7e5;}
+h1 {text-align: center;
+    color:#e39871;
+	font-weight:bold;
+	font-family:Lucida Handwriting;}
+h2 {text-align:center;
+    color:#858741;
+	font-family:Lucida Handwriting;}
+	
+h3 {text-align:center;
+    color:#e39871;}
+	
+#wrap {width:1200px;
+       margin:auto;
+}
+.left {float: left;
+	   width:400px;}
+	
+.right {float: right;
+	    width:400px;
+}
+
+.center {width:400px;
+         display:inline-block;
+		 }
+
+.border {border-style: solid;
+        border-width: 2px 2px 2px 2px;
+	    border-color:#858741;
+        background-color:#bbbc76;
+		margin:10px;
+		padding:20px;
+		
+}
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.centerimg {margin-left:auto;
+         margin-right:auto;
+		 display:block;}
+
+.details {display: none;}
+.details1 {display: none;}
+.details2 {display: none;}
+.details3 {display: none;}
+.details4 {display: none;}
+.details5 {display: none;}
+
+dt {color:#858741;	
+	 padding:10px;}
+
+dd {padding:10px;
+    font-size:15pt;}
+
+	 
+@media only screen and (max-width:1024px){
+body{margin:0;}
+main{margin-left:0;}
+h1, h2{font-size: 120%;}
+body {background-color:#f4f7e5;
+      }
+main {color:#f4f7e5;}
+h1 {text-align: center;
+    color:#e39871;
+	font-weight:bold;
+	font-family:Lucida Handwriting;}
+h2 {text-align:center;
+    color:#858741;
+	font-family:Lucida Handwriting;}
+	
+h3 {text-align:center;
+    color:#858741;}
+#wrap {width:900px;
+       margin:auto;
+}
+.left {float: left;
+	   width:300px;}
+	
+.right {float: right;
+	    width:300px;
+}
+
+.center {width:300px;
+         display:inline-block;
+		 }
+		 
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.border {border-style: solid;
+        border-width: 2px 2px 2px 2px;
+	    border-color:#858741;
+        background-color:#bbbc76;
+		margin:10px;
+		padding:20px;
+		
+}
+
+.centerimg {margin-left:auto;
+         margin-right:auto;
+		 display:block;}
+
+dt   {color:#858741;	
+	 padding:10px;}
+
+dd {padding:10px;
+    font-size:12pt;}		 
+
+.details {display: none;}
+.details1 {display: none;}
+.details2 {display: none;}
+.details3 {display: none;}
+.details4 {display: none;}
+.details5 {display: none;}
+}
+
+@media only screen and (max-width:768px)
+{
+h1, h2 {font-size:100%;}
+body{margin:0;}
+main{margin-left:0;}
+h1, h2{font-size: 120%;}
+body {background-color:#f4f7e5;
+      }
+main {color:#f4f7e5;}
+h1 {text-align: center;
+    color:#e39871;
+	font-weight:bold;
+	font-family:Lucida Handwriting;}
+h2 {text-align:center;
+    color:#858741;
+	font-family:Lucida Handwriting;}
+	
+h3 {text-align:center;
+    color:#e39871;}
+#wrap {width:600px;
+       margin:auto;
+}
+.left {float: left;
+	   width:200px;}
+	
+.right {float: right;
+	    width:200px;
+}
+
+.center {width:200px;
+         display:inline-block;
+		 }
+		 
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.border {border-style: solid;
+        border-width: 2px 2px 2px 2px;
+	    border-color:#858741;
+        background-color:#bbbc76;
+		margin:10px;
+		padding:20px;
+		
+}
+img {width:100px;
+     height:75px;}
+
+.centerimg {margin-left:auto;
+         margin-right:auto;
+		 display:block;}
+		 
+dt   {color:#858741;	
+	 padding:10px;}
+
+dd {padding:10px;
+    font-size:12pt;}		 
+
+		 
+.details {display: none;}
+.details1 {display: none;}
+.details2 {display: none;}
+.details3 {display: none;}
+.details4 {display: none;}
+.details5 {display: none;}
+}
+</style>
+  <!--[if lt IE 9]>
+    <script src="/js/html5shiv.js"></script>
+  <![endif]-->
+ <script>
+  $(document).ready(function(){
+      $('.more').click(function(){
+	     $('.details').fadeIn(1000);
+		  return false;
+	  });  
+  });
+    $(document).ready(function(){
+      $('.more1').click(function(){
+	     $('.details1').fadeIn(1000);
+		  return false;
+	  });  
+  });
+    $(document).ready(function(){
+      $('.more2').click(function(){
+	     $('.details2').fadeIn(1000);
+		  return false;
+	  });  
+  });
+    $(document).ready(function(){
+      $('.more3').click(function(){
+	     $('.details3').fadeIn(1000);
+		  return false;
+	  });  
+  });
+    $(document).ready(function(){
+      $('.more4').click(function(){
+	     $('.details4').fadeIn(1000);
+		  return false;
+	  });  
+  });
+    $(document).ready(function(){
+      $('.more5').click(function(){
+	     $('.details5').fadeIn(1000);
+		  return false;
+	  });  
+  });
+   $(document).ready(function(){
+      $('.less').click(function(){
+	     $('.details').hide();
+		  return false;
+	  });  
+  });
+    $(document).ready(function(){
+      $('.less1').click(function(){
+	     $('.details1').hide();
+		  return false;
+	  });  
+  });
+    $(document).ready(function(){
+      $('.less2').click(function(){
+	     $('.details2').hide();
+		  return false;
+	  });  
+  });
+    $(document).ready(function(){
+      $('.less3').click(function(){
+	     $('.details3').hide();
+		  return false;
+	  });  
+  });
+    $(document).ready(function(){
+      $('.less4').click(function(){
+	     $('.details4').hide();
+		  return false;
+	  });  
+  });
+    $(document).ready(function(){
+      $('.less5').click(function(){
+	     $('.details5').hide();
+		  return false;
+		
+	  });  
+  });
+  function scrollWin1() {
+    window.scrollTo(0, 325);
+}
+function scrollWin2() {
+    window.scrollTo(0, 750);
+}
+function scrollWin3() {
+    window.scrollTo(0, 325);
+}
+function scrollWin4() {
+    window.scrollTo(0, 750);
+}
+function scrollWin5() {
+    window.scrollTo(0, 325);
+}
+function scrollWin6() {
+    window.scrollTo(0, 750);
+}
+  </script>
+</head>
+<body>
+<div>
+<header>
+<div class="container">
+<img src="banner.png" alt="" style="width:100%">
+ <div class="centered">Senior Server Meal Delivery</div>
+</div>
+ 
+<div class="logo">
+		<a href="index.html"><img src="logo.png" class="logo" alt="logo"></a>
+</div>
+<div>
+<nav>
+    <ul>
+	 <li><a href="index.html">Home</a></li>
+	 <li><a href="javascript:void(0)">Meals</a>
+	     <ul>
+	       <li><a href="breakfastpage.html">Breakfast</a></li>
+	       <li><a href="lunch&dinner.html">Lunch/Dinner</a></li>
+	     </ul>
+	 </li>
+	 <li><a href="SpecialtyDiets.html">Specialty Diets</a></li>
+     <li><a href="gallery.html">Gallery</a></li>
+     <li><a href="contact.html">Contact</a></li>
+	</ul> 
+</nav>
+</div>
+<h1>Specialty Diets</h1>
+</header>
+<main>
+<div id="wrap">
+ <div class="clearfix">
+ <div class="left">
+   <div class="border" id="tab">
+   <h2>Heart Healthy</h2>
+    <img class="centerimg" src="Heart-Healthy-Icon.png" alt="Heart Healthy Icon" width="200" height="150">
+    <p>Meals fall at or below the American Heart Association's (AHA) recommendations for calories, sodium, total fat and saturated fat, with less than 600mg of sodium and less than 3.5 grams of saturated fat to support heart health.</p>
+    <br>
+   <a href="tab" class="more"><img src="LearnMore.png" alt="Learn More" width="100" height="50"></a>
+     <div class="more">
+	  <div class="less">   
+      <div class="details">
+       <h3>FEATURED HEART HEALTHY MEALS</h3>
+	   <dl>
+       <dt><img class="centerimg" src="diet.jpg" alt="Bacon and Potato Egg Scramble" width="200" height="150"><br>BACON AND POTATO EGG SCRAMBLE</dt>
+       <dd> A salty and sweet breakfast treat! Fluffy, whole eggs are scrambled and topped with smoky bacon, roasted red-skinned potatoes and cheddar cheese. Enjoy sweet cinnamon spiced apples with antioxidant benefits for a delicious and healthy breakfast side.</dd>
+       <dt>INGREDIENTS</dt>
+      <dd>
+       Egg Scramble: Scrambled Eggs (egg whites, whole eggs, corn starch, xanthan gum, beta carotene, sea salt, black pepper), Red-Skinned Potatoes, Uncured Bacon (pork, water, turbinado sugar, seasoning [cultured celery juice powder, sea salt]), Cheddar Cheese (pasteurized lowfat milk, cheese cultures, salt, enzymes, vitamin A palmitate), Green Onion. 
+       </dd><dd>
+       Cinnamon Apples: Apples, Brown Sugar, Cinnamon, Xanthan Gum. 
+       </dd><dd>
+       CONTAINS: EGG & MILK.</dd>
+       <dt><img class="centerimg" src="diet2.jpg" alt="Chiken Meatballs with Marinara and Linguine" width="200" height="150"><br>CHICKEN MEATBALLS WITH MARINARA AND LINGUINE</dt>
+       <dd>This tasty entree is complete with chicken meatballs served over a bed of linguine and topped with a delicious marinara sauce. To complete, this dish is accompanied by a side of fresh Italian-cut green beans infused with just the right amount of garlic and basil.</dd>
+       <dt>INGREDIENTS</dt>
+       <dd>Meatballs: Chicken Breast, Chicken Thigh, Yellow Onion, Breadcrumbs (wheat flour, sugar, yeast, salt), Buttermilk (cultured low fat milk, nonfat dry milk, salt), Whole Eggs, Grated Cheese (pasteurized part-skim cow’s milk, cultures, salt, cornstarch), Chicken Fat, Water, Garlic, Sea Salt, Basil, Olive Oil, Fennel, Paprika, Black Pepper. 
+      </dd><dd>
+       Marinara Sauce: Tomato Sauce (tomatoes, salt, citric acid), Tomato Puree (tomatoes, salt, citric acid), Water, Tomato Paste, Yellow Onion, Carrots, Garlic, Chicken Broth Concentrate (chicken stock, natural flavor, salt), Olive Oil, Basil, Xanthan Gum, Sea Salt, Oregano, Red Chili Flakes. 
+       </dd><dd>
+       Green Beans: Italian-Cut Green Beans, Yellow Onion, Garlic, Basil, Olive Oil, Sea Salt. 
+       </dd><dd>
+       Cooked Linguini Pasta: Water, Pasta (durum semolina flour [milled wheat, niacin, iron, thiamine mononitrate, riboflavin, folic acid], water, modified wheat starch, soy protein, wheat gluten, soy flour, egg whites, modified cellulose, xanthan gum, spices). 
+       </dd><dd>
+       Garnish: Shaved Parmesan Cheese (pasteurized part-skim cow’s milk, cultures, salt). 
+       </dd><dd>
+       CONTAINS: EGGS, MILK, SOY & WHEAT.</dd>	    
+      </dl>
+	  <a href=".details" class="less" onclick="scrollWin1()"><img src="Less.png" alt="Less" width="100" height="50"></a>
+	   </div>
+     </div>
+   </div>
+   </div>
+   <div class="border" id= "tab1">
+   <h2>Gluten Free</h2>
+    <img class="centerimg" src="Gluten-Free-Icon.png" alt="Gluten Free Icon" width="200" height="150">
+    <p>All meals are tested to the Food and Drug Administration (FDA) gluten free standard (20 ppm or less) and do not contain wheat, rye or barley.</p>
+    <br><br><br>
+    <a href="#tab1" class="more1"><img src="LearnMore.png" alt="Learn More" width="100" height="50"></a>
+     <div class="more1">
+	 <div class="less1">
+      <div class="details1">
+       <h3>FEATURED GLUTEN FREE MEALS</h3>
+	   <dl>
+       <dt><img class="centerimg" src="diet3.jpg" alt="Artichoke Spinach And Roasted Red Pepper Frittata" width="200" height="150"><br>ARTICHOKE SPINACH AND ROASTED RED PEPPER FRITTATA</dt>
+       <dd>This fluffy whole egg frittata is sure to please with all of its satisfying ingredients. Stuffed with artichoke, spinach, roasted red pepper and white cheddar cheese, your mouth will be longing for every bite. To complement this delectable breakfast are tender and juicy, protein-packed turkey sausage links so you can start your day and keep going. </dd>
+       <dt>INGREDIENTS</dt>
+       <dd>Frittata: Evaporated Milk (skim milk, half and half [milk, cream]), Egg Whites, Whole Eggs (whole eggs, citric acid), Cheddar Cheese (pasteurized lowfat milk, cheese cultures, salt, enzymes, vitamin A palmitate), Spinach, Artichokes (artichoke hearts, water, salt, citric acid), Half and Half (milk, cream), Roasted Red Peppers (red pepper, water, salt, citric acid), Sour Cream (grade A cultured cream, skim milk, vitamin A palmitate), Tapioca Starch, Cayenne, Nutmeg. 
+       </dd><dd>
+	   Turkey Sausage: Turkey, Water, Potato Starch, Dextrose, Sugar, Salt, Potassium Chloride, Spices. 
+       </dd><dd>
+	   Contains less than 2% soybean oil and soy lecithin as nonstick agent.
+	   </dd><dd>
+	   CONTAINS: EGG, MILK & SOY.
+       </dd>
+       <dt><img class="centerimg" src="diet.jpg" alt="Bacon and Potato Egg Scramble" width="200" height="200"><br>BACON AND POTATO EGG SCRAMBLE</dt>
+       <dd> A salty and sweet breakfast treat! Fluffy, whole eggs are scrambled and topped with smoky bacon, roasted red-skinned potatoes and cheddar cheese. Enjoy sweet cinnamon spiced apples with antioxidant benefits for a delicious and healthy breakfast side.</dd>
+       <dt>INGREDIENTS</dt>
+      <dd>
+       Egg Scramble: Scrambled Eggs (egg whites, whole eggs, corn starch, xanthan gum, beta carotene, sea salt, black pepper), Red-Skinned Potatoes, Uncured Bacon (pork, water, turbinado sugar, seasoning [cultured celery juice powder, sea salt]), Cheddar Cheese (pasteurized lowfat milk, cheese cultures, salt, enzymes, vitamin A palmitate), Green Onion. 
+       
+       Cinnamon Apples: Apples, Brown Sugar, Cinnamon, Xanthan Gum. 
+       
+       CONTAINS: EGG & MILK.</dd>
+	   <dt><img class="centerimg" src="diet4.jpg" alt="Beef And Broccoli" width="200" height="150"><br>BEEF AND BROCCOLI</dt>
+       <dd> Our braised beef and broccoli dish is one to please. A traditional ginger garlic soy sauce coats braised beef cuts and broccoli that is served on top of brown rice. This enticing dish just gets better when served alongside our ginger-seasoned, sesame oil and delicious Colorado honey carrots.</dd>
+       <dt>INGREDIENTS</dt>
+       <dd>Beef: Beef, Water, Potato Starch, Garlic, Sea Salt, Onion Powder. 
+       </dd><dd>
+	   Sesame Carrots: Carrots, Honey, Ginger, Tamari (water, soybeans, salt, sugar), Sesame Oil, Xanthan Gum. 
+       </dd><dd>
+	   Brown Rice: Water, Brown Rice, Olive Oil. 
+	   </dd><dd>
+	   Ginger Garlic Sauce: Water, Onion, Tamari (water, soybeans, salt, sugar), Garlic, Ginger, Brown Sugar, Rice Vinegar, Sesame Oil, Lime, Xanthan Gum, Crushed Red Pepper, Five Spice. 
+	   </dd><dd>
+	   Broccoli: Broccoli. 
+       </dd><dd>
+	   CONTAINS: SOY.
+       </dd>
+       <dt><img class="centerimg" src="diet5.jpg" alt="Fishermans Seafood Stew" width="200" height="150"><br>FISHERMANS SEAFOOD STEW</dt>
+       <dd>This seafood favorite is brimming with boatloads of Alaskan cod, clams, shrimp, and crab cooked in a creamy tomato broth spiked with white wine. Herbed cannellini beans and roasted cherry tomatoes complete this delicious dish that you will want to dive into again and again!</dd>
+       <dt>INGREDIENTS</dt>
+       <dd>Fisherman's Seafood Stew: Tomato Sauce (vine-ripened fresh tomatoes, onions in a blend of extra virgin olive oil and sunflower oil, carrot puree, garlic puree, salt, sugar, basil, seasonings, naturally derived citric acid), Alaskan Cod, Water, Clams, Shrimp, Onions, Crab, Heavy Cream, Celery, Red Bell Pepper, Carrots, Chablis Wine, Seafood Stock Concentrate (codfish, pollock, shrimp, crab, salt, salmon), Green Onion, Tomato Paste (tomatoes), Garlic, Modified Rice Starch, Expeller Pressed Canola Oil, Oregano, Tobasco Sauce (distilled vinegar, red pepper, salt), Black Pepper, Thyme, Red Chile Flakes. 
+       </dd><dd>
+	   Herbed White Beans: Cannellini Beans (white beans, water), Tomatoes (cherry tomatoes, non-hydrogenated sunflower oil, salt, garlic, oregano), Olive Oil, Basil, Parsley, Lemon Juice, Garlic, Rosemary, Sage, Sea Salt, Black Pepper. 
+       </dd><dd>
+	   CONTAINS: FISH (COD, POLLOCK, SALMON), MILK & SHELLFISH (SHRIMP, CLAM, CRAB) SULFITES.
+       </dd>
+	   </dl>
+	  <a href=".details1" class="less1" onclick="scrollWin2()"><img src="Less.png" alt="Less" width="100" height="50"></a>
+	  </div>
+     </div>
+	 </div>
+ </div>
+</div>
+  <div class="center">
+   <div class="border" id ="tab2">
+   <h2>Diabetic</h2>
+    <img class="centerimg" src="Diabetic-Friendly-Icon.png" alt="Diabetic Icon" width="200" height="150">
+    <p>All meals follow our founding physician's recommendation to consume a consistent and controlled amount of carbohydrates at each meal. These meals help to maintain blood glucose levels and contain 25 grams or less of NET carbohydrates each.</p>
+     
+    <a href="#tab2" class="more2"><img src="LearnMore.png" alt="Learn More" width="100" height="50"></a>
+     <div class="more2">
+	 <div class="less2">
+      <div class="details2">
+       <h3>FEATURED DIABETIC MEALS</h3>
+	   <dl>
+       <dt><img class="centerimg" src="diet6.jpg" alt="Asagna With Garden Marinara" width="200" height="150"><br>ASAGNA WITH GARDEN MARINARA</dt>
+       <dd>Low-carb lasagna? Try our spin on an Italian classic! Three-cheese lasagna is topped with homemade ground chicken sausage and smothered in a garden marinara full of carrots, zucchini and yellow squash. It is accompanied by roasted broccoli to bring you a 360 calorie meal with 29 grams of protein and only 23 net carbohydrates! </dd>
+       <dt>INGREDIENTS</dt>
+       <dd>Garden Marinara: Crushed Tomatoes (vine-ripened tomatoes, tomato puree, citric acid), Water, Diced Tomatoes (vine-ripened tomatoes, tomato juice, calcium chloride, citric acid), Onion, Tomato Paste (tomatoes, citric acid), Burgundy Wine, Carrots, Yellow Squash, Zucchini, Extra Virgin Olive Oil, Sea Salt, Garlic, Italian Seasoning (marjoram, thyme, rosemary, savory, sage, oregano, basil), Basil, Xanthan Gum, Oregano. 
+       </dd><dd>
+	   Lasagna: Enriched Lasagna Noodles (enriched durum flour [milled wheat, niacin, iron, thaiamine mononitrate, riboflavin, folic acid], water, whole eggs), Cheese Filling (ricotta [whey, milk, cream, vinegar, xanthan, locust bean and guar gums], whole egg, water, mozzarella cheese [pasteurized part skim milk, cultures, salt, enzymes], Romano cheese [pasteurized sheep’s milk, cheese cultures, salt, enzymes], salt, parsley, white pepper, xanthan gum). 
+       </dd><dd>
+	   Broccoli: Broccoli, Extra Virgin Olive Oil, Sea Salt. 
+       </dd><dd>
+	   Seasoned Ground Chicken: Chicken Breast, Onion Powder, Fennel Seed, Extra Virgin Olive Oil, Sea Salt, Italian Seasoning (marjoram, thyme, rosemary, savory, sage, oregano, basil), Basil, Black Pepper, Crushed Red Pepper. 
+	   </dd><dd>
+	   Garnish: Parmesan Cheese (pasteurized cow’s milk, rennet, salt). 
+	   </dd><dd>
+	   CONTAINS: EGG, MILK, SULFITES & WHEAT.
+       </dd>
+       <dt><img class="centerimg" src="diet.jpg" alt="Bacon and Potato Egg Scramble" width="200" height="150"><br>BACON AND POTATO EGG SCRAMBLE</dt>
+       <dd> A salty and sweet breakfast treat! Fluffy, whole eggs are scrambled and topped with smoky bacon, roasted red-skinned potatoes and cheddar cheese. Enjoy sweet cinnamon spiced apples with antioxidant benefits for a delicious and healthy breakfast side.</dd>
+       <dt>INGREDIENTS</dt>
+      <dd>
+       Egg Scramble: Scrambled Eggs (egg whites, whole eggs, corn starch, xanthan gum, beta carotene, sea salt, black pepper), Red-Skinned Potatoes, Uncured Bacon (pork, water, turbinado sugar, seasoning [cultured celery juice powder, sea salt]), Cheddar Cheese (pasteurized lowfat milk, cheese cultures, salt, enzymes, vitamin A palmitate), Green Onion. 
+       
+       Cinnamon Apples: Apples, Brown Sugar, Cinnamon, Xanthan Gum. 
+       
+       CONTAINS: EGG & MILK.</dd>
+	   <dt><img class="centerimg" src="diet7.jpg" alt="Chicken Rice And Vegetable Stew" width="200" height="150"><br>CHICKEN RICE AND VEGETABLE STEW</dt>
+       <dd>Our hearty Chicken, Rice and Vegetable Stew will leave your soul comforted and body nourished. The earthy colors from white beans, zucchini, carrots, spinach and a blend of wild rice pair with the garlic and thyme to provide immune boosting and cardiovascular benefits.</dd>
+       <dt>INGREDIENTS</dt>
+       <dd>Stew: Water, Chicken, White Beans, Zucchini, Spinach, Carrots, Tomatoes (tomatoes, tomato juice, citric acid, calcium chloride), Wild Rice Blend (jasmine brown rice, sweet brown rice, medium grain red rice, black china rice, wild rice), Celery, Onions, Rice Starch, Chicken Broth Concentrate (chicken stock, natural flavor, salt, sugar, yeast extract, Garlic, Expeller Pressed Canola Oil, Sea Salt, Black Pepper, Thyme, Bay Leaves.
+       </dd>
+	   <dt><img class="centerimg" src="diet8.jpg" alt="Oven Fried Catfish With Spicy Tomato Leek Sauce" width="200" height="150"><br>OVEN FRIED CATFISH WITH SPICY TOMATO LEEK SAUCE</dt>
+       <dd>This enjoyable oven-fried catfish is topped with a spicy tomato leek sauce with just the right amount of spice. It is served alongside fresh, sauteed green cabbage with red beans and brown rice, creating the perfect mixture.</dd>
+       <dt>INGREDIENTS</dt>
+       <dd>Catfish with Cornmeal: Catfish (catfish, fat-free milk), Cornmeal (degerminated yellow corn meal, niacin, reduced iron, thiamin mononitrate, riboflavon, folic acid), Garlic, Thyme, Sea Salt (natural potassium chloride, natural sea salt, magnesium, trace minerals), Black Pepper. 
+       </dd><dd>
+	   Red Beans: Kidney Beans (kidney beans, water, salt, calcium chloride), Onion, Green Bell Pepper, Celery, Garlic, Olive Oil, Parsley, Low Sodium Sea Salt (potassium chloride, natural sea salt, magnesium, trace minerals), Thyme, Sage, Black Pepper, Cayenne.
+       </dd><dd>
+	   Leek and Tomato Sauce: Tomatoes (vine-ripened fresh tomatoes, tomato juice, salt, calcium chloride, naturally derived citric acid), White Wine, Leeks, Garlic, Thyme, Low Sodium Sea Salt (potassium chloride, natural sea salt, magnesium, trace minerals), Black Pepper, Parsley, Cayenne.
+       </dd><dd>
+	   Cabbage: Green Cabbage, Olive Oil, Black Pepper, Low Sodium Sea Salt (potassium chloride, natural sea salt, magnesium, trace minerals). 
+       </dd><dd>
+	   Brown Rice: Cooked Brown Rice. 
+       
+	   CONTAINS: FISH (CATFISH), MILK & SULFITES.
+       </dd>
+      </dl>
+	  <a href=".details2" class="less2" onclick="scrollWin3()"><img src="Less.png" alt="Less" width="100" height="50"></a>
+	  </div>
+     </div>
+	 </div>
+   </div>
+   <div class="border" id = "tab3">
+   <h2>Low Sodium</h2>
+    <img class="centerimg" src="Low-Sodium-Icon.png" alt="Low Sodium Icon" width="200" height="150">
+    <p>Meals fall at or below the American Heart Association's (AHA) recommendations for calories, sodium, total fat and saturated fat. Each meal contains 600 milligrams or less of sodium per meal, falling below the Dietary Guidelines for Americans recommendation of 2,300 milligrams per day.</p>
+    
+    <a href="#tab3" class="more3"><img src="LearnMore.png" alt="Learn More" width="100" height="50"></a>
+     <div class="more3">
+	 <div class="less3">
+      <div class="details3">
+       <h3>FEATURED LOW SODIUM MEALS</h3>
+	   <dl>
+       <dt><img src="diet9.jpg" alt="Sweet Onion Frittata" width="200" height="150"><br>SWEET ONION FRITTATA</dt>
+       <dd>Our enticing frittata will start your morning off sweet. Inside the frittata your taste buds will find a goldmine of flavors, with caramelized onions for a sweet touch, along with cheddar, Swiss and Parmesan cheeses to keep you wanting more with each bite. The Sweet Onion Frittata is paired with our favorite, protein packed turkey sausage. </dd>
+       <dt>INGREDIENTS</dt>
+       <dd>Frittata: Sweet Onions, Evaporated Milk (skim milk, half and half [milk, cream]), Egg Whites, Whole Eggs (whole eggs, citric acid), Cheddar Cheese (pasteurized lowfat milk, cheese cultures, salt, enzymes, vitamin A palmitate), Half and Half (milk, cream), Sour Cream (grade A cultured cream, skim milk, vitamin A palmitate), Tapioca Starch, Swiss Cheese (pasteurized part skim milk, cheese cultures, salt, enzymes), Parmesan Cheese (pasteurized part skim milk, cheese cultures, salt, enzymes), Cayenne, Nutmeg. 
+       </dd><dd>
+	   Turkey Sausage: Turkey, Water, Potato Starch, Dextrose, Sugar, Salt, Potassium Chloride, Spices. 
+       </dd><dd>
+	   Contains less than 2% soybean oil and soy lecithin as nonstick agent. 
+	   </dd><dd>
+	   CONTAINS: EGG, MILK & SOY.
+       </dd>
+       <dt><img src="diet10.jpg" alt="" width="200" height="150"><br>FOUR CHEESE RAVIOLI</dt>
+       <dd>Ricotta, Parmesan, Mozzarella and Romano cheeses are combined to create this delicious Four Cheese Ravioli entree and it is topped with a creamy three cheese tomato sauce. The dish is accompanied by a whole green beans infused with black pepper and garlic.</dd>
+       <dt>INGREDIENTS</dt>
+       <dd>Four Cheese Ravioli: Enriched Durum Wheat Flour (durum wheat flour, niacin, ferrous sulfate, thiamine mononitrate, riboflavin, folic acid), Part-Skim Ricotta Cheese (whey, cream, vinegar, carrageenan), Water, Asiago Cheese (pasteurized cultured milk, salt, enzymes), Eggs, Parmesan Cheese (pasteurized milk, cheese cultures, salt, enzymes), Part-Skim Mozzarella Cheese (pasteurized cultured part skim milk, salt, enzymes), Bleached Wheat Flour, Romano Cheese (pasteurized cultured cow’s milk, salt, enzymes), Salt, Spice, Parsley.
+       </dd><dd>
+	   Three Cheese Tomato Sauce: Tomatoes (vine-ripened fresh tomatoes, salt, naturally derived citric acid), Water, Half and Half (milk, cream), Tomato Paste (tomatoes), Onions, Basil, Parmesan Cheese (pasteurized part-skim milk, cheese cultures, salt, enzymes, powdered cellulose [anti-caking]), Garlic, Mozzarella (pasteurized reduced fat milk, cheese culture, salt, enzymes, vitamin A palmitate), Fontina Cheese (cultured milk, enzymes,salt, powdered cellulose [to prevent caking]), Olive Oil, Xanthan Gum, Black Pepper.
+       </dd><dd>
+	   Green Beans: Whole Green Beans, Olive Oil, Sea Salt (potassium chloride, natural sea salt, magnesium, trace minerals), Black Pepper, Garlic.
+       </dd><dd>
+	   Garnish: Parmesan (pasteurized part-skim milk, cheese cultures, salt, enzymes)
+       </dd><dd>
+	   CONTAINS: EGG, MILK & WHEAT.
+       </dd>
+      </dl>
+	  <a href=".details3" class="less3" onclick="scrollWin4()"><img src="Less.png" alt="Less" width="100" height="50"></a>
+	  </div>
+     </div>
+	 </div>
+	</div>
+   </div>
+<div class="right">
+   <div class="border" id = "tab4">
+   <h2>Low Carbohydrates</h2>
+    <img class="centerimg" src="Low-Carb-Icon.png" alt="Low Carbohydrates Icon" width="200" height="150">
+    <p>All meals follow a low carbohydrate diet, containing 25g or less of NET carbohydrates per meal.</p><br><br><br>
+    <a href="#tab4" class="more4"><img src="LearnMore.png" alt="Learn More" width="100" height="50"></a>
+     <div class="more4">
+	 <div class="less4">
+      <div class="details4">
+       <h3>FEATURED CARBOHYDRATES MEALS</h3>
+	   <dl>
+       <dt><img class="centerimg" src="diet3.jpg" alt="Artichoke Spinach And Roasted Red Pepper Frittata" width="200" height="150"><br>ARTICHOKE SPINACH AND ROASTED RED PEPPER FRITTATA</dt>
+       <dd>This fluffy whole egg frittata is sure to please with all of its satisfying ingredients. Stuffed with artichoke, spinach, roasted red pepper and white cheddar cheese, your mouth will be longing for every bite. To complement this delectable breakfast are tender and juicy, protein-packed turkey sausage links so you can start your day and keep going. </dd>
+       <dt>INGREDIENTS</dt>
+       <dd>Frittata: Evaporated Milk (skim milk, half and half [milk, cream]), Egg Whites, Whole Eggs (whole eggs, citric acid), Cheddar Cheese (pasteurized lowfat milk, cheese cultures, salt, enzymes, vitamin A palmitate), Spinach, Artichokes (artichoke hearts, water, salt, citric acid), Half and Half (milk, cream), Roasted Red Peppers (red pepper, water, salt, citric acid), Sour Cream (grade A cultured cream, skim milk, vitamin A palmitate), Tapioca Starch, Cayenne, Nutmeg. 
+       </dd><dd>
+	   Turkey Sausage: Turkey, Water, Potato Starch, Dextrose, Sugar, Salt, Potassium Chloride, Spices. 
+       </dd><dd>
+	   Contains less than 2% soybean oil and soy lecithin as nonstick agent.
+	   </dd><dd>
+	   CONTAINS: EGG, MILK & SOY.
+       </dd>
+       <dt><img src="diet11.jpg" alt="" width="200" height="150"><br>PORK TENDERLOIN WITH PLUM GINGER SAUCE</dt>
+       <dd>This juicy, sliced pork tenderloin is topped with a sweet plum ginger sauce to make an unforgettable meal. This dish is completed and served along with toasted coconut basmati rice with edamame and sesame sugar snap peas.</dd>
+       <dt>INGREDIENTS</dt>
+       <dd>Pork Tenderloin: Pork Tenderloin, Water, Potato Starch, Sea Salt, White Pepper. 
+       </dd><dd>
+	   Sugar Snap Peas: Sugar Snap Peas, Sesame Oil, Black Sesame Seeds, Sea Salt. 
+       </dd><dd>
+	   Coconut Rice: Water, Basmati Rice, Edamame, Coconut, Olive Oil. 
+       </dd><dd>
+	   Plum Ginger Sauce: Plums, Water, Prune Juice, Red Onion, Garlic, Rice Wine Vinegar (rice vinegar, water, diluted to 4.2% acidity), Tamari (water, soybeans, salt, sugar), Brown Sugar, Sesame Oil, Ginger, Five Spice, Cilantro, Xanthan Gum, Red Pepper Flakes.
+       </dd><dd>
+	   CONTAINS: SOY & TREE NUT (COCONUT).
+       </dd>
+      </dl>
+	   <a href=".details4" class="less4" onclick="scrollWin5()"><img src="Less.png" alt="Less" width="100" height="50"></a>
+	  </div>
+     </div>
+	 </div>
+   </div>
+   <div class="border" id ="tab5">
+   <h2>Dairy Free</h2>
+    <img class="centerimg" src="Dairy-Free-Icon.png" alt="Dairy Free Icon" width="200" height="150">
+    <p>All meals with this classification are free of dairy products.<br></p>
+    <br><br><br><br>
+    <a href="#tab5" class="more5"><img src="LearnMore.png" alt="Learn More" width="100" height="50"></a>
+     <div class="more5">
+	 <div class="less5">
+      <div class="details5">
+       <h3>FEATURED DAIRY FREE MEALS</h3>
+	   <dl>
+       <dt><img class="centerimg" src="diet4.jpg" alt="Beef And Broccoli" width="200" height="150"><br>BEEF AND BROCCOLI</dt>
+       <dd> Our braised beef and broccoli dish is one to please. A traditional ginger garlic soy sauce coats braised beef cuts and broccoli that is served on top of brown rice. This enticing dish just gets better when served alongside our ginger-seasoned, sesame oil and delicious Colorado honey carrots.</dd>
+       <dt>INGREDIENTS</dt>
+       <dd>Beef: Beef, Water, Potato Starch, Garlic, Sea Salt, Onion Powder. 
+       </dd><dd>
+	   Sesame Carrots: Carrots, Honey, Ginger, Tamari (water, soybeans, salt, sugar), Sesame Oil, Xanthan Gum. 
+       </dd><dd>
+	   Brown Rice: Water, Brown Rice, Olive Oil. 
+	   </dd><dd>
+	   Ginger Garlic Sauce: Water, Onion, Tamari (water, soybeans, salt, sugar), Garlic, Ginger, Brown Sugar, Rice Vinegar, Sesame Oil, Lime, Xanthan Gum, Crushed Red Pepper, Five Spice. 
+	   </dd><dd>
+	   Broccoli: Broccoli. 
+       </dd><dd>
+	   CONTAINS: SOY.
+       </dd>
+       <dt><img src="diet.jpg" alt="" width="200" height="150"><br>PORK VINDALOO</dt>
+       <dd>This dish originated from the popular Portuguese dish, "vinha d'alhos," meaning meat marinated in wine vinegar. If that isn't enough for you to try this entree, it is served along with turmeric-infused rice and aloo gobi, a Pakistani, Indian and Nepali recipe made with potatoes, cauliflower and Indian spices.</dd>
+       <dt>INGREDIENTS</dt>
+       <dd>Pork Tenderloin: Pork Tenderloin, Water, Potato Starch, Sea Salt, White Pepper. Aloo Gobi
+       </dd><dd>
+	   Vindaloo Sauce: Tomatoes (tomatoes, tomato puree, salt, citric acid, basil), Water, Onion, Brown Sugar, Olive Oil, Coriander, Garlic, Ginger, Tamarind Paste (tamarind extract), Apple Cider Vinegar, Cumin, Black Pepper, Mustard Seed, Turmeric, Xanthan Gum, Fenugreek, Crushed Red Pepper, Sea Salt. 
+       </dd><dd>
+	   Turmeric Rice: Water, Basmati Rice, Garlic, Ginger, Olive Oil, Sea Salt, Turmeric.
+       </dd>
+      </dl>
+	   <a href=".details5" class="less5" onclick="scrollWin6()"><img src="Less.png" alt="Less" width="100" height="50"></a>
+	  </div>
+     </div>
+	 </div>
+	 </div>
+    </div>
+   </div>
+  </div>
+  </main>
+ </div>
+
+
+<br>
+<br>
+<br>
+<footer>
+<nav class="navbar">
+    <ul>
+	 <li><a href="index.html">Home</a></li>
+	 <li><a href="breakfastpage.html">Breakfast</a></li>
+	 <li><a href="lunch&dinner.html">Lunch/Dinner</a></li> 
+	 <li><a href="SpecialtyDiets1.html">Specialty Diets</a></li>
+     <li><a href="gallery.html">Gallery</a></li>
+     <li><a href="contact.html">Contact</a></li>
+	</ul> 
+</nav>
+
+<div class="copyright">Copyright &copy; Senior Server 2018</div>
+</footer>
+</body>
+</html>
